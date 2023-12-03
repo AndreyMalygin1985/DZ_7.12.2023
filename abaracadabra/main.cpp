@@ -15,7 +15,7 @@ int main()
 
 	string s1 = "abaracadabra";
 	string s2 = "ab";
-	string s = "";
+	string s;
 	int i;
 	while ((i = s1.find(s2)) >= 0)
 	{
@@ -25,15 +25,16 @@ int main()
 	s += s1;
 	cout << s << endl;
 
-	/*-------------------------------------------------------------------
-	string s1;
+	//-------------------------------------------------------------------
+	/*string s1;
+	string s2;
+	string s;
 	cout << "Введите текст" << endl;
 	getline(cin, s1);
-	string s2;
 	cout << "Введите вхождения, которые возьмём в ( )" << endl;
 	getline(cin, s2);
-	string s = "";
-	int i;
+
+	int i{};
 	while ((i = s1.find(s2)) >= 0)
 	{
 		s += s1.substr(0, i) + "(" + s2 + ")";
